@@ -1,8 +1,9 @@
 $(window).on('resize', function() {
   if($(window).width() >= 768) {
     $(".list").removeClass("open");
+    $(".navbar__burger svg.feather").replaceWith(feather.icons.menu.toSvg());
   } else {
-    $(".list").css('left', "-100%"); 
+    $(".list").css('transform', "translateX(100%)"); 
   }
 })
 
