@@ -64,6 +64,10 @@ h1 {
   font-size: 1.6rem;
 }
 
+.content__description strong {
+  font-weight: normal;
+}
+
 .content__title span {
   color: #68b254;
   display: block;
