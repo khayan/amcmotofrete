@@ -1,4 +1,4 @@
-$(window).on('resize', function() {
+/* $(window).on('resize', function() {
   if($(window).width() >= 768) {
     $(".list").removeClass("open");
     $(".navbar__burger svg.feather").replaceWith(feather.icons.menu.toSvg());
@@ -15,4 +15,4 @@ $(".navbar__burger").click(function(){
   } else {
     $(".navbar__burger svg.feather").replaceWith(feather.icons.menu.toSvg());
   }
-});
+}); */
