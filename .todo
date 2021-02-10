@@ -1,4 +1,55 @@
-- [x] Levantar informações AMC
-- [] Imagens
-- [] Ícones
-- [x] Logos
+-- Foto da estrada - PRECISOU FAZER UMA ENTREGA EM OUTRA CIDADE? FAZEMOS VIAGENS PARA QUALQUER LOCALIDADE!!!
+-- Arte reserva calendário - AGENDE SUA COLETA/ENTREGA AGORA!
+-- NÃO PERCA TEMPO! CONTRATE AGORA NOSSOS SERVIÇOS!
+
+- banner-large: 1600x400
+- banner-medium: 1200x255
+- banner-mobile: 984x450
+
+SOBRE A EMPRESA
+- [] o que a empresa faz
+- [] onde atua
+- [] contar história do vina paixão + profissão
+- [] Seus documentos em boas mãos!
+- [] Sua entrega garantida!
+- [] Palavras chave
+  - [] Responsabilidade
+  - [] Eficiência
+  - [] Agilidade
+  - [] Confiança
+  - [] Excelência
+
+SERVIÇOS
+- [] Coleta e entrega de documentos, envolopes e malotes
+- [] Coleta e entrega de remédios
+- [] Coleta e entrega de peças mecânicas pequenas
+- [] Pequenos volumes
+- [] Serviços de trâmite imobiliários
+- [] Serviços em agências bancárias
+- [] Serviços em cartórios e fóruns
+- [] E muitos outros
+
+
+FORMAS DE PAGAMENTO 
+- [x] Logos e ícones
+  - Master Card
+  - Visa
+  - Elo
+  - Pix
+  - TED/DOC
+  - Dinheiro
+  - Boleto
+
+CONTATO
+- [] Definir layout
+  - Lista de ícones ilustrativos
+- [] E-mail (mailto:)
+- [] Ligue agora (tel:+5513981606169)
+- [] WhatsApp (href:https://api.whatsapp.com/send?phone=5513981606169)
+
+FOOTER
+- [x] Logo
+- [x] Redes Sociais (Facebook e Instagram)
+- [] Horário de atendimento: seg-sex das 8h às 18h
+- [] Para agendar um serviço clique aqui
+- [] Para serviços fora do horário comercial clique aqui
