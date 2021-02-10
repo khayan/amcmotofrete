@@ -28,6 +28,11 @@ input, button, textarea{
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
+.free-svg {
+  z-index: -2;
+  display: none;
+}
+
 .wrapper {
   width: 100%;
   display: flex;
