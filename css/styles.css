@@ -103,7 +103,7 @@
 .header div{
   display: block;
   max-width: 984px;
-  background-image: url("../assets/img/banner-small.png");
+  /* background-image: url("../assets/img/banner-small.png"); */
   background-repeat: no-repeat;
   background-size:contain;
   background-position: center;
@@ -199,7 +199,7 @@
 @media (min-width: 768px) {
   .header div{
     max-width: 1200px;
-    background-image: url("../assets/img/banner-medium.png");
+    /* background-image: url("../assets/img/banner-medium.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -211,7 +211,7 @@
 @media (min-width: 1024px) {
   .header div{
     max-width: 1600px;
-    background-image: url("../assets/img/banner-large.png");
+    /* background-image: url("../assets/img/banner-large.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
