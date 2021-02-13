@@ -30,38 +30,45 @@
       <img class="navigation__logo" src="assets/img/amc-motofrete.png" alt="AMC Motofrete"/>
       <button class="navbar__burger" id="nav-button"><i data-feather="menu"></i></button>
       <ul class="list">
-        <li class="list__item"><a class="list__link link" href="">Sobre</a></li>
-        <li class="list__item"><a class="list__link link" href="">Serviços</a></li>
-        <li class="list__item"><a class="list__link link" href="">Clientes</a></li>
-        <li class="list__item"><a class="list__link link" href="">Contato</a></li>
+        <li class="list__item"><a class="list__link link" href="#about">Sobre</a></li>
+        <li class="list__item"><a class="list__link link" href="#services">Serviços</a></li>
+        <li class="list__item"><a class="list__link link" href="#clients">Clientes</a></li>
+        <li class="list__item"><a class="list__link link" href="#contact">Contato</a></li>
       </ul>
     </nav>
   </div>
 
-  <header class="header">
-		<div>
-			<h1>AMC Motofrete</h1>
-			<h2>Delivery de documentos e pequenos volumes em Santos/São Paulo</h2>
-      
-      <a class="free-svg" href="http://www.freepik.com">Designed by pch.vector / Freepik</a> <!-- motofretista-header.png -->
-		</div>
+  <header class="header wrapper">
+    <div class="max-width">
+
+      <div class="header__content">
+
+        <div class="header__title">
+          <!-- <img src="./assets/img/amc-motofrete.png"> -->
+          <h2>Delivery de documentos e pequenos volumes em Santos/São Paulo</h2>
+        </div>
+
+        <div class="header__headline">
+          <p>Preciso fazer uma entrega em outra cidade!</p> 
+          <p>Fazemos viagens para qualquer localidade!</p>
+        </div>
+
+      </div>
+
+      <div class="header__svg">
+          <img src="./assets/img/motofretista-header.png">
+          <!-- <a class="free-svg" href="http://www.freepik.com">Designed by pch.vector / Freepik</a> motofretista-header.png -->
+      </div>
+    </div>
 	</header>
 	
   <main>
-    <section class="section__about wrapper section">
+    <section id="about" class="section__about wrapper section">
       <div class="about max-width">
         <h3 class="title">Sobre</h3>
         
         <div>
           <div class="about__content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate architecto numquam tempore atque
-              quis quia ipsam esse ad perspiciatis eos sit rerum quae, amet voluptates eius alias dignissimos illum?
-    
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores accusantium asperiores consequatur in
-              exercitationem illum et corrupti neque magnam eveniet cumque voluptatem suscipit sint aliquid magni nobis
-              porro, voluptate cupiditate?
-            </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate architecto numquam tempore atque
               quis quia ipsam esse ad perspiciatis eos sit rerum quae, amet voluptates eius alias dignissimos illum?
@@ -81,7 +88,7 @@
     </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path fill="#231f20" fill-opacity="1" d="M0,128L80,138.7C160,149,320,171,480,160C640,149,800,107,960,96C1120,85,1280,107,1360,117.3L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-    <section class="section__services wrapper section">
+    <section id="services" class="section__services wrapper section">
       <div class="max-width">
         <h3 class="title">Serviços</h3>
   
@@ -113,7 +120,7 @@
       </div>
     </section>
 
-    <section class="section__clients wrapper section">
+    <section id="clients" class="section__clients wrapper section">
       <div class="max-width">
         <h3 class="title">Clientes</h3>
   
@@ -122,7 +129,7 @@
 
     </section>
 
-    <section class="section__contact wrapper section">
+    <section id="contact" class="section__contact wrapper section">
       <div class="max-width">
         <h3 class="title">Contato</h3>
   
