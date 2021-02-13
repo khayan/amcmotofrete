@@ -178,6 +178,10 @@
   background-color: white;
 }
 
+.section__payment{
+  background-color: var(--main-black);
+}
+
 /*
 *
   MEDIA QUERIES 
