@@ -236,9 +236,25 @@
   width: 50%;
 }
 
+.about__content strong{
+  font-weight: 400;
+}
+
 .about__content p{
   font-size: 2rem;
   line-height: 32px;
+}
+
+.about__content p + p{
+  margin: 20px 0;
+}
+
+.about__content p a{
+  background-color: var(--main-green);
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .about__image{
