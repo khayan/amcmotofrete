@@ -225,8 +225,10 @@
 
 .about > div{
   display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-top: 20px;
 }
 
@@ -240,10 +242,25 @@
 }
 
 .about__image{
-  width: 400px;
-  height: 400px;
-  background-color: #aaa;
+  /* width: 100%; */
 }
+
+.about__image img{
+  /* width: 100%; */
+  max-width: 500px;
+}
+
+
+/*
+*
+  SERVICES
+*
+*/
+
+.section__payment{
+  background-color: var(--main-black);
+}
+
 /*
 *
   MEDIA QUERIES 
