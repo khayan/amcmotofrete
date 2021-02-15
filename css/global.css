@@ -2,6 +2,7 @@
   font-size: 55%;
   --main-black: #231f20;
   --main-green: #84c44b;
+  --dark-green: #70a740;
   --text-white: #ffffff;
 }
 
@@ -16,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #1f1f1f;
   background-color: #f2f2f2;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 
 html, body {
@@ -25,7 +26,7 @@ html, body {
 }
 
 input, button, textarea{
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 
 .free-svg {
@@ -41,18 +42,81 @@ input, button, textarea{
 
 .section {
   width: 100%;
-  padding: 50px 20px;
+  padding: 70px 20px;
 }
 
 .title {
+  font-family: "Roboto", sans-serif;
   font-size: 3.5rem;
   text-align: center;
   margin-bottom: 40px;
+  position: relative;
 }
+
+.title--light {
+  color: var(--text-white);
+}
+/* 
+.title::before {
+  content: "";
+  width: 35%;
+  position:absolute;
+  height: 2px;
+  border-bottom:1px solid white;
+  right: 0;
+  top: 50%;
+  
+}
+
+.title::after {
+  content: "";
+  width: 35%;
+  position:absolute;
+  height: 2px;
+  border-bottom:1px solid white;
+  left: 0;
+  top: 50%;
+} */
 
 .max-width {
   width: 100%;
   max-width: 1200px;
+}
+
+.button {
+  padding: 15px 25px;
+  border-radius: 25px;
+  background-color: var(--main-green);
+  color: var(--text-white);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+  min-width: 200px;
+  max-width: 400px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  transition: background-color .2s ease;
+}
+
+.button:hover {
+  background-color: var(--dark-green);
+}
+
+.button:focus {
+outline-width: 2px;
+outline-color: white;
+outline-style: solid;
+}
+
+.amc-motofrete{
+  color: var(--main-green);
+  font-weight: 900;
+  font-family: "Nunito";
+  /* color: var(--text-white);
+  background-color: var(--main-green);
+  padding: 1px 7px;
+  border-radius: 8px; */
 }
 
 button{
