@@ -3,6 +3,7 @@
   --main-black: #231f20;
   --main-green: #84c44b;
   --dark-green: #70a740;
+  --darkest-green: #2c5f00;
   --text-white: #ffffff;
 }
 
@@ -56,27 +57,6 @@ input, button, textarea{
 .title--light {
   color: var(--text-white);
 }
-/* 
-.title::before {
-  content: "";
-  width: 35%;
-  position:absolute;
-  height: 2px;
-  border-bottom:1px solid white;
-  right: 0;
-  top: 50%;
-  
-}
-
-.title::after {
-  content: "";
-  width: 35%;
-  position:absolute;
-  height: 2px;
-  border-bottom:1px solid white;
-  left: 0;
-  top: 50%;
-} */
 
 .max-width {
   width: 100%;
@@ -84,19 +64,26 @@ input, button, textarea{
 }
 
 .button {
-  padding: 15px 25px;
-  border-radius: 25px;
+  padding: 1.5rem 2.5rem;
+  border-radius: 2.5rem;
   background-color: var(--main-green);
   color: var(--text-white);
   text-decoration: none;
   text-align: center;
   display: block;
   width: 100%;
-  min-width: 200px;
-  max-width: 400px;
+  min-width: 20rem;
+  max-width: 45rem;
   font-size: 1.8rem;
-  font-weight: bold;
   transition: background-color .2s ease;
+}
+
+.button span {
+  font-weight: bold;
+}
+
+.button i {
+  margin-left: .6rem;
 }
 
 .button:hover {

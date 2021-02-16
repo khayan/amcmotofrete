@@ -21,20 +21,31 @@
   align-items:center;
 }
 
-.social-media__content i {
+.social-media__content a {
   font-size: 2rem;
+  color: var(--main-black);
+  transition: color .3s ease;
 }
 
-.social-media__content i + i {
-  margin-left: 15px;
+.social-media__content a + a {
+  margin-left: 1.5rem;
 }
 
 .social-media__content p {
-  font-size: 14px;
-  margin-left: 10px;
+  font-size: 1.4rem;
+  margin-left: 1rem;
   font-weight: 600;
 }
 
+.social-media__content + .social-media__content a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-media__content a:hover {
+  color: var(--darkest-green);
+}
 /*
 *
   NAVBAR 
