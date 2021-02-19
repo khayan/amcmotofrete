@@ -21,9 +21,10 @@ $(window).scroll(function(){
   var sticky = $('.navigation'),
       header = $('.header'),
       media = $('.media'),
-      scroll = $(window).scrollTop();
+      scroll = $(window).scrollTop(),
+      width = $(window).width();
 
-  if (scroll >= 35){
+  if (scroll >= 35 && width >= 768){
     sticky.addClass('fixed');
     header.css("padding-top", (sticky.height() + media.height()))
   } else {
