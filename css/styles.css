@@ -350,7 +350,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 380px);
+    grid-template-columns: repeat(auto-fit, 375px);
     row-gap: 35px;
     column-gap: 25px; 
   }
