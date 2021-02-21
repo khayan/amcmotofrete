@@ -1,34 +1,67 @@
-/* $(window).on('resize', function() {
-  if($(window).width() >= 768) {
-    $(".list").removeClass("open");
-    $(".navbar__burger svg.feather").replaceWith(feather.icons.menu.toSvg());
-  } else {
-    $(".list").css('transform', "translateX(100%)"); 
+function menuOpened() {
+  $(".navbar__burger i").removeClass("fa-bars");
+  $(".navbar__burger i").addClass("fa-times");
+  $("body").css("overflow", "hidden");
+}
+
+function menuClosed() {
+  $("body").css("overflow-y", "scroll");
+  $(".navbar__burger i").removeClass("fa-times");
+  $(".navbar__burger i").addClass("fa-bars");
+  $(".list-wrapper::before").css("background-color", "transparent");
+}
+
+
+$(".list__item").click(function() {
+  if($(".list-wrapper").hasClass("open")) {
+     $(".navbar div").removeClass("open"); 
+     menuClosed();
   }
+
+})
+
+$(window).resize(function() {
+  var mediaHeight = $(".media").height();
+  var navigation = $(".navigation");
+  var header = $(".header");
+
+  if($(window).width() >= 768) {
+    navigation.removeClass("fixed");
+    header.css("padding-top", 35);
+    navigation.removeClass("sticky");
+  }
+
+  if (($(window).width() < 768)) {
+    navigation.addClass("fixed");
+    header.css("padding-top", "8.8rem")
+  }
+
 })
 
 $(".navbar__burger").click(function(){  
-  const list = $(".list") 
-  list.toggleClass("open");
-  if(list.hasClass("open")){
-    $(".navbar__burger svg.feather").replaceWith(feather.icons.x.toSvg());
-  } else {
-    $(".navbar__burger svg.feather").replaceWith(feather.icons.menu.toSvg());
-  }
-}); */
+  const menu = $(".navbar div") 
+  menu.toggleClass("open");
 
-$(window).scroll(function(){
-  var sticky = $('.navigation'),
-      header = $('.header'),
-      media = $('.media'),
-      scroll = $(window).scrollTop(),
-      width = $(window).width();
+  menu.hasClass("open") 
+  ? menuOpened()
+  : menuClosed()
+}); 
 
-  if (scroll >= 35 && width >= 768){
-    sticky.addClass('fixed');
-    header.css("padding-top", (sticky.height() + media.height()))
-  } else {
-    sticky.removeClass('fixed');
-    header.css("padding-top", 0)
+$(window).scroll(function () {
+  var mediaHeight = $(".media").height();
+  var navigation = $(".navigation");
+  var header = $(".header");
+  var scroll = $(window).scrollTop();
+
+  if (($(window).width() < 768)) {
+    navigation.addClass("fixed");
   }
-});
+
+  if(scroll >= mediaHeight && $(window).width() >= 768) {
+    header.css("padding-top", (mediaHeight + navigation.height()) + 35);
+    navigation.addClass("sticky");
+  } else if (scroll <= mediaHeight && $(window).width() >= 768) {
+    header.css("padding-top", 35);
+    navigation.removeClass("sticky");
+  }
+})
