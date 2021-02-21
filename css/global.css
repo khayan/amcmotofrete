@@ -1,0 +1,129 @@
+:root {
+  font-size: 55%;
+  --main-black: #231f20;
+  --main-green: #84c44b;
+  --dark-green: #70a740;
+  --darkest-green: #2c5f00;
+  --text-white: #ffffff;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior: auto;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #1f1f1f;
+  background-color: #f2f2f2;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+input, button, textarea{
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+.free-svg {
+  z-index: -2;
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  width: 100%;
+  padding: 35px 20px;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.title--light {
+  color: var(--text-white);
+}
+
+.max-width {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.button {
+  padding: 1.5rem 2.5rem;
+  border-radius: 2.5rem;
+  background-color: var(--main-green);
+  color: var(--text-white);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+  min-width: 20rem;
+  max-width: 45rem;
+  font-size: 1.8rem;
+  transition: background-color .2s ease;
+}
+
+.button span {
+  font-weight: bold;
+}
+
+.button i {
+  margin-left: .6rem;
+}
+
+.float-whatsapp{
+  position: absolute;
+  bottom: 20px;
+  right: 20px; 
+  background-color: #70a740;
+
+}
+
+.button:hover {
+  background-color: var(--dark-green);
+}
+
+.button:focus {
+outline-width: 2px;
+outline-color: white;
+outline-style: solid;
+}
+
+.amc-motofrete{
+  color: var(--main-green);
+  font-weight: 900;
+  font-family: "Nunito";
+  /* color: var(--text-white);
+  background-color: var(--main-green);
+  padding: 1px 7px;
+  border-radius: 8px; */
+}
+
+button{
+  cursor:pointer;
+}
+
+@media (min-width: 700px) {
+  :root{
+    font-size: 62.5%;
+  }
+}
