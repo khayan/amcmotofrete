@@ -86,6 +86,14 @@ input, button, textarea{
   margin-left: .6rem;
 }
 
+.float-whatsapp{
+  position: absolute;
+  bottom: 20px;
+  right: 20px; 
+  background-color: #70a740;
+
+}
+
 .button:hover {
   background-color: var(--dark-green);
 }
