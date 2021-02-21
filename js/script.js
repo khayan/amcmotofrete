@@ -2,6 +2,7 @@ function menuOpened() {
   $(".navbar__burger i").removeClass("fa-bars");
   $(".navbar__burger i").addClass("fa-times");
   $("body").css("overflow", "hidden");
+  $(".navbar__overlay").addClass(".navbar__overlay--opened");
 }
 
 function menuClosed() {
@@ -9,15 +10,24 @@ function menuClosed() {
   $(".navbar__burger i").removeClass("fa-times");
   $(".navbar__burger i").addClass("fa-bars");
   $(".list-wrapper::before").css("background-color", "transparent");
+  $(".navbar__overlay").removeClass(".navbar__overlay--opened");
 }
 
 
 $(".list__item").click(function() {
   if($(".list-wrapper").hasClass("open")) {
-     $(".navbar div").removeClass("open"); 
+     $(".navbar div").removeClass("open");
+     $(".navbar__overlay").toggleClass("navbar__overlay--opened"); 
      menuClosed();
   }
 
+})
+
+$(".navbar__overlay").click(function() {
+  menuClosed();
+  $(".list-wrapper").removeClass("open");
+  // $(".navbar__overlay").removeClass(".navbar__overlay--opened");
+  $(".navbar__overlay").toggleClass("navbar__overlay--opened");
 })
 
 $(window).resize(function() {
@@ -41,6 +51,7 @@ $(window).resize(function() {
 $(".navbar__burger").click(function(){  
   const menu = $(".navbar div") 
   menu.toggleClass("open");
+  $(".navbar__overlay").toggleClass("navbar__overlay--opened");
 
   menu.hasClass("open") 
   ? menuOpened()
