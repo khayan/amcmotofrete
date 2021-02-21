@@ -676,6 +676,7 @@
 
   .navbar {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .navbar__overlay {
@@ -719,6 +720,8 @@
 
   .list__item {
     font-size: 1.8rem;
+    margin-right: 0;
+    margin-left: 0;
   }  
 
   .list__link {
@@ -761,7 +764,7 @@
   } 
 
   .list__item + .list__item{
-    margin-left: 4rem;
+    margin-left: 1.6rem;
   }
   
 }

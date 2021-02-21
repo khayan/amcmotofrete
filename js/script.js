@@ -76,3 +76,25 @@ $(window).scroll(function () {
     navigation.removeClass("sticky");
   }
 })
+/* 
+$( document ).ready(function(event) {
+	// Smooth scroll to element. Not necessary but provides a bit of delight
+	$(".list__item").click(function() {
+		// This prevents the default 'jump to' behaviour if JavaScript is enabled,
+		// whilst keeping the functionality there for when JavaScript isn't enabled
+		event.preventDefault();
+	    $("html, body").animate({ scrollTop: ($($(this).attr('href')).offset().top - 86) }, 500);
+	    return true;
+	});
+}); */
+
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+	    var target = this.hash;
+	    var $target = $(target);
+	    $('html, body').stop().animate({
+	        'scrollTop': ($target.offset().top - $(".navigation").height())
+	    }, 900);
+	});
+});
